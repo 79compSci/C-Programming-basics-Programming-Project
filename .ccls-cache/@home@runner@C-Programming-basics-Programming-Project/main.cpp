@@ -2,15 +2,15 @@
 using namespace std;
 
 int main() {
-    const double GALLONS = 20.0;
-    const double MPG_TOWN = 23.5;
-    const double MPG_HIGHWAY = 28.9;
+    const int TOTAL_CUSTOMERS = 16500;
+    const double PERCENT_ENERGY_DRINKERS = 0.15;
+    const double PERCENT_CITRUS_DRINKERS = 0.58;
 
-    double distanceInTown = GALLONS * MPG_TOWN;
-    double distanceOnHighway = GALLONS * MPG_HIGHWAY;
+    int energyDrinkConsumers = TOTAL_CUSTOMERS * PERCENT_ENERGY_DRINKERS;
+    int citrusDrinkConsumers = energyDrinkConsumers * PERCENT_CITRUS_DRINKERS;
 
-    cout << "Distance the car can travel in town: " << distanceInTown << " miles." << endl;
-    cout << "Distance the car can travel on the highway: " << distanceOnHighway << " miles." << endl;
+    cout << "Approximate number of customers purchasing energy drinks per week: " << energyDrinkConsumers << endl;
+    cout << "Approximate number of customers preferring citrus-flavored drinks: " << citrusDrinkConsumers << endl;
 
     return 0;
 }
